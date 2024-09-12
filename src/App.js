@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Home,NotFound,DashboardAdmin,DashbordUser } from './pages';
+import { Home,NotFound,DashboardAdmin,DashbordUser,MakingAppointment } from './pages';
 import { DashboardLayout } from './layouts';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/sign-up" element={<Home/>}/>
+            <Route path="/making-appointment" element={<MakingAppointment/>}/>
             <Route path="/dashboard" element={<DashboardLayout />}>
               <Route path="/dashboard/admin" element={<DashboardAdmin/>} />
               <Route path="/dashboard/user" element={<DashbordUser/>} />
