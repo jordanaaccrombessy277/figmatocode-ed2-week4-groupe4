@@ -41,7 +41,7 @@ const data = [
     userImage: avatar,
     role: "Cardiologist",
     email: "cody@gmail.com",
-    phone: "+299 61000003",
+    phone: "+299 52000005",
     date: "24/12/2022 09:00 AM",
     status: "Approved",
     statusColor: "bg-green-100 text-green-700"
