@@ -23,9 +23,3 @@ body::-webkit-scrollbar {
     background-color: #3A8EF6;
     width: 10px;
 }
-
-.container 
-{
-    max-width: 1500px !important;
-    margin: 0 auto;
-}
