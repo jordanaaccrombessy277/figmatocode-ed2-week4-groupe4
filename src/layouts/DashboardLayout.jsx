@@ -13,7 +13,7 @@ function DashboardLayout() {
 
   return (
     <div className="flex flex-col h-screen">
-      <header className="bg-white shadow p-4">
+      <header className="fixed z-0 w-full bg-white shadow p-4">
         <div className="flex justify-between items-center">
           <a href="/dashboard">
             <img
@@ -41,7 +41,7 @@ function DashboardLayout() {
 
       <div className="flex flex-1">
         <aside
-          className={`xl:w-64 w-52 bg-gradient-to-r from-purple-primary to-blue-primary text-white flex flex-col fixed xl:relative top-0 left-0 h-full transform ${
+          className={`fixed -z-20 h-screen xl:w-52 w-44 bg-gradient-to-r from-purple-primary to-blue-primary text-white flex flex-col transform ${
             isSidebarOpen ? "translate-x-0" : "-translate-x-full"
           } xl:translate-x-0 transition-transform duration-300`}
         >
@@ -72,7 +72,7 @@ function DashboardLayout() {
           </div>
         </aside>
 
-        <main className="flex-1 p-6 max-w-full">
+        <main className="2xl:absolute 2xl:top-1/2 2xl:left-1/2 2xl:-translate-x-1/2 2xl:-translate-y-1/2 max-w-full xl:ml-52 2xl:ml-32 p-3 sm:p-6 -z-40 mt-20">
           <Outlet />
         </main>
       </div>
