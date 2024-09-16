@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'Sora-Thin';
+    src: url('../fonts/Sora-Thin.woff2') format('woff2'),
+         url('../fonts/Sora-Thin.woff') format('woff'),
+         url('../fonts/Sora-Thin.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Sora-Bold';
+    src: url('../fonts/Sora-Bold.woff2') format('woff2'),
+         url('../fonts/Sora-Bold.woff') format('woff'),
+         url('../fonts/Sora-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
