@@ -1,16 +1,23 @@
 import React from "react";
 import avatar from "../assets/avatar.svg";
 import chevreon_down_white from '../assets/chevron-down-white.svg';
+import logo from "../assets/logo.svg";
 
 function Sidebar({ isSidebarOpen }) {
   return (
     <aside
-      className={`fixed sidebar xl:z-20 z-50 h-screen xl:w-52 w-44 bg-gradient-to-r from-purple-primary to-blue-primary text-white flex flex-col transform ${
+      className={`fixed pt-0 sm:pt-24 sidebar xl:z-20 z-50 h-screen xl:w-52 w-44 bg-gradient-to-r from-blue-primary to-purple-primary text-white flex flex-col transform ${
         isSidebarOpen ? "translate-x-0" : "-translate-x-full"
       } xl:translate-x-0 transition-transform duration-300`}
     >
-      <div className="p-4 text-lg xl:text-xl font-semibold">Dashboard</div>
       <nav className="flex-1 p-4">
+      <a className="sm:hidden block mb-3" href="/dashboard">
+            <img
+              className=" pointer-events-none cursor-pointer"
+              src={logo}
+              alt="logo-icon"
+            />
+          </a>
         <ul>
           <li className="mb-4">
             <a

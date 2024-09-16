@@ -2,20 +2,33 @@ import React from "react";
 import avatar from "../assets/avatar.svg";
 import logo from "../assets/logo.svg";
 import menu from "../assets/menu.svg";
-import close from '../assets/close.svg';
-import chevreon_down from '../assets/chevron-down-black.svg';
+import close from "../assets/close.svg";
+import chevreon_down from "../assets/chevron-down-black.svg";
 
 function Navbar({ toggleSidebar, isSidebarOpen }) {
   return (
     <header className="fixed navbar z-50 w-full bg-white shadow p-4">
       <div className="flex justify-between items-center">
-        <a href="/dashboard">
-          <img
-            className="h-8 sm:h-10 pointer-events-none cursor-pointer"
-            src={logo}
-            alt="logo-icon"
-          />
-        </a>
+        <div className="flex flex-row items-center">
+          <a className="hidden sm:block" href="/dashboard">
+            <img
+              className=" pointer-events-none cursor-pointer"
+              src={logo}
+              alt="logo-icon"
+            />
+          </a>
+
+          <div>
+            <div>
+              <h2 className="text-md sm:text-lg font-semibold">
+                Dashboard user
+              </h2>
+            </div>
+            <div>
+              <p className="text-sm sm:text-md">Welcome, User</p>
+            </div>
+          </div>
+        </div>
         <nav className="flex flex-row items-center justify-center space-x-4 mt-2">
           <a href="/" className="text-gray hover:text-blue-primary">
             Home
