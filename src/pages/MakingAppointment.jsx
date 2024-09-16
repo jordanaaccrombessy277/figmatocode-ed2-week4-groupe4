@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from "react";
+//import Calendar from "react-calendar";
+//import "react-calendar/dist/Calendar.css";
 
 function MakingAppointment() {
   return (
     <div>
-      Page de prise de rendez-vous
+      MakingAppointment
     </div>
-  )
+  );
 }
 
-export default MakingAppointment
+export default MakingAppointment;
