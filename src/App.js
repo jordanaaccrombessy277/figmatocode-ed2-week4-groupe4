@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Home,NotFound,DashboardAdmin,DashbordUser,MakingAppointment } from './pages';
 import { DashboardLayout } from './layouts';
 
+
 function App() {
   return (
     <BrowserRouter>
