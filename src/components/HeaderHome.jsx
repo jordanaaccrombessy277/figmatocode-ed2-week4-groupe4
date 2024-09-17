@@ -29,7 +29,7 @@ function HeaderHome() {
 
         {isOpenHeader && <HeaderHomeMobile handleClickHamburger={handleClickHamburger} />}
       </div>
-      <a href="/" className="md:px-7 px-4 md:py-4 py-2 items-center text-[8px] md:text-sm rounded-3xl bg-gradient-to-r from-blue-primary to-purple-primary flex flex-row md:gap-2.5 gap-1">
+      <a href="/signup" className="md:px-7 px-4 md:py-4 py-2 items-center text-[8px] md:text-sm rounded-3xl bg-gradient-to-r from-blue-primary to-purple-primary flex flex-row md:gap-2.5 gap-1">
           <img src={pasient} alt="Register Pasien" />
           <span className="font-semibold text-white">Patient Register</span>
       </a>

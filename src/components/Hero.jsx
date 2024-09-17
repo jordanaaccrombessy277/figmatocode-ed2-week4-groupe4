@@ -9,7 +9,7 @@ function Hero() {
             <h2 className="pb-4 font-bold text-3xl bg-gradient-to-r from-blue-primary to-purple-primary bg-clip-text text-transparent">Clinic 24 is ready to serve public complaints 24/7.</h2>
             <p className="pb-8 text-base text-gray-primary">A hospital is an integral part of a social and health organization with the function of providing comprehensive services.</p>
             <div className="flex">
-                 <a href="/" className="md:px-7 px-4 md:py-4 py-2 items-center text-sm rounded-3xl bg-gradient-to-r from-blue-primary to-purple-primary flex flex-row md:gap-2.5 gap-1">
+                 <a href="#services" className="md:px-7 px-4 md:py-4 py-2 items-center text-sm rounded-3xl bg-gradient-to-r from-blue-primary to-purple-primary flex flex-row md:gap-2.5 gap-1">
                     <img src={pasient} alt="Register Pasien" />
                     <span className="font-semibold text-white">View services</span>
                 </a>

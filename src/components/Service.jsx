@@ -14,7 +14,7 @@ function Service({icon_service,title,whatsapp}) {
           <p className="text-gray-primary text-sm pb-6">
             A shop where medicines are prepared and sold based on a doctor's prescription and medical goods are traded.
           </p>
-          <a href="/" className="md:px-7 px-4 md:py-4 py-2 items-center text-base md:text-lg rounded-3xl bg-gradient-to-r from-blue-primary to-purple-primary flex flex-row md:gap-16 gap-3">
+          <a href="/making-appointment" className="md:px-7 px-4 md:py-4 py-2 items-center text-base md:text-lg rounded-3xl bg-gradient-to-r from-blue-primary to-purple-primary flex flex-row md:gap-16 gap-3">
               <img src={whatsapp} alt="whatsapp" />
               <span className="font-semibold text-white ">Reservation</span>
           </a>

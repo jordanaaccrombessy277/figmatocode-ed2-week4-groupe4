@@ -8,7 +8,7 @@ import Service from "./Service"
 
 function Services() {
   return (
-    <div className={`w-full px-6 py-10 md:px-32 md:py-28 bg-blue-extralight`}>
+    <div id="services" className={`w-full px-6 py-10 md:px-32 md:py-28 bg-blue-extralight`}>
        
         <div className="flex flex-col md:flex-row gap-5 md:gap-14 md:justify-between">
             <p className="font-semibold w-full md:w-1/2 text-2xl text-blue-dark">
