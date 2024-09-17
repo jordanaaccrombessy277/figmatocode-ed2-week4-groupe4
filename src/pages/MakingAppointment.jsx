@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function MakingAppointment() {
   return (
     <div>
-      Page de prise de rendez-vous
+      Making Appointment
     </div>
-  )
+  );
 }
 
-export default MakingAppointment
+export default MakingAppointment;
