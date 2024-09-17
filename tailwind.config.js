@@ -12,6 +12,9 @@ module.exports = {
         "blue-dark":"#031432",
         "blue-dark-dark":"#0A0E31"
       },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to right, #3A8EF6, #6F3AFA)'
+      },
       translate:{
         'double-full':'200%'
       },
@@ -19,3 +22,4 @@ module.exports = {
   },
   plugins: [],
 };
+
