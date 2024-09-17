@@ -4,6 +4,7 @@ import 'react-calendar/dist/Calendar.css';
 import '../Calendar.css';
 import TimeSelect from '../Components/TimeSelect';
 
+
 function MakingAppointment() {
   // État pour la date sélectionnée, l'heure, le nom et la raison de l'appel
   const [date, setDate] = useState(new Date());
@@ -146,7 +147,6 @@ function MakingAppointment() {
           </div>
         </div>
       )}
-    </div>
   );
 }
 
