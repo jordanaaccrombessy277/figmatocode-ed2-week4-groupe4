@@ -11,7 +11,7 @@ function App() {
             <Route path="/making-appointment" element={<MakingAppointment/>}/>
             <Route path="/dashboard" element={<DashboardLayout />}>
               <Route path="/dashboard/admin" element={<DashboardAdmin/>} />
-              <Route index element={<DashbordUser/>} />
+              <Route path="/dashboard/user" index element={<DashbordUser/>} />
               <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>

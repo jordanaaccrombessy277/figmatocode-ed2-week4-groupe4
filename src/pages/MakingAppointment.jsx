@@ -1,10 +1,11 @@
 import React from "react";
+
 function MakingAppointment() {
-  return (
+  return(
     <div>
       Making Appointment
     </div>
-  );
+  )
 }
 
 export default MakingAppointment;

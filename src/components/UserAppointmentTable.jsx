@@ -114,41 +114,41 @@ const UserAppointmentTable = ({ selectedDate, selectedStatus }) => {
   });
 
   return (
-    <div className="overflow-x-auto px-2 sm:px-4">
-      <table className="bg-white border border-gray">
-        <thead className="bg-gray-100 text-gray-primary uppercase">
+    <div className="overflow-x-auto px-4">
+      <table className="min-w-full bg-white border border-gray-200 rounded-lg shadow-md">
+        <thead className="bg-gray-100">
           <tr>
-            <th className="text-sm sm:text-lg py-2 px-4">ID</th>
-            <th className="text-sm sm:text-lg py-2 px-4">Doctor Name</th>
-            <th className="text-sm sm:text-lg py-2 px-4">Appointment Date and Time</th>
-            <th className="text-sm sm:text-lg py-2 px-4">Contact</th>
-            <th className="text-sm sm:text-lg py-2 px-4">Status</th>
-            <th className="text-sm sm:text-lg py-2 px-4">Reason</th>
+            <th className="text-left py-3 px-4 text-gray-primary text-sm sm:text-lg">ID</th>
+            <th className="text-left py-3 px-4 text-gray-primary text-sm sm:text-lg">Doctor Name</th>
+            <th className="text-left py-3 px-4 text-gray-primary text-sm sm:text-lg">Appointment Date & Time</th>
+            <th className="text-left py-3 px-4 text-gray-primary text-sm sm:text-lg">Contact</th>
+            <th className="text-left py-3 px-4 text-gray-primary text-sm sm:text-lg">Status</th>
+            <th className="text-left py-3 px-4 text-gray-primary text-sm sm:text-lg">Reason</th>
           </tr>
         </thead>
         <tbody>
           {filteredData.map((item) => (
-            <tr key={item.id}>
-              <td className="py-2 px-4">#{item.id}</td>
-              <td className="py-2 px-4 flex items-center">
+            <tr key={item.id} className="border-b border-gray-200 hover:bg-gray-50">
+              <td className="py-3 px-4 text-sm sm:text-base">#{item.id}</td>
+              <td className="py-3 px-4 flex items-center">
                 <img
-                  src={avatar}
+                  src={item.userImage}
                   alt={item.doctorName}
                   className="w-8 h-8 rounded-full mr-2"
                 />
                 <div>
-                  <p className="text-sm sm:text-base">{item.doctorName}</p>
-                  <p className="text-xs sm:text-sm text-gray-primary">{item.role}</p>
+                  <p className="font-medium text-sm sm:text-base">{item.doctorName}</p>
+                  <p className="text-xs sm:text-sm text-gray-500">{item.role}</p>
                 </div>
               </td>
-              <td className="text-sm sm:text-base py-2 px-4">{item.date}</td>
-              <td className="text-sm sm:text-base py-2 px-4">{item.contact}</td>
-              <td className="text-sm sm:text-base py-2 px-4">
-                <span className={`text-sm sm:text-base px-2 py-1 rounded ${item.statusColor}`}>
+              <td className="py-3 px-4 text-sm sm:text-base">{item.date}</td>
+              <td className="py-3 px-4 text-sm sm:text-base">{item.contact}</td>
+              <td className="py-3 px-4">
+                <span className={`px-2 py-1 rounded-full text-xs sm:text-sm font-medium ${item.statusColor}`}>
                   {item.status}
                 </span>
               </td>
-              <td className="text-sm sm:text-base py-2 px-4">{item.reason}</td>
+              <td className="py-3 px-4 text-sm sm:text-base">{item.reason}</td>
             </tr>
           ))}
         </tbody>
