@@ -1,24 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+* 
+{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
 
-@font-face {
-    font-family: 'Sora-Thin';
-    src: url('../fonts/Sora-Thin.woff2') format('woff2'),
-         url('../fonts/Sora-Thin.woff') format('woff'),
-         url('../fonts/Sora-Thin.ttf') format('truetype');
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-  }
+body::-webkit-scrollbar-thumb {
+    background-color: #6C87AE;
+    width: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
-  @font-face {
-    font-family: 'Sora-Bold';
-    src: url('../fonts/Sora-Bold.woff2') format('woff2'),
-         url('../fonts/Sora-Bold.woff') format('woff'),
-         url('../fonts/Sora-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-display: swap;
-    font-style: normal;
-  }
+body::-webkit-scrollbar {
+    background-color: #3A8EF6;
+    width: 10px;
+}
