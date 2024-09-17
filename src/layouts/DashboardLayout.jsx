@@ -4,7 +4,6 @@ import { Outlet } from 'react-router-dom'
 function DashboardLayout() {
   return (
     <div>
-       dashboard layout
        <Outlet />
     </div>
   )
