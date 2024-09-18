@@ -147,6 +147,7 @@ function MakingAppointment() {
           </div>
         </div>
       )}
+    </div>
   );
 }
 
