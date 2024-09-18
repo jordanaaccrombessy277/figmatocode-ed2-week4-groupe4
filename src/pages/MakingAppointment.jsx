@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import '../Calendar.css';
-import TimeSelect from '../Components/TimeSelect';
+import TimeSelect from '../components/TimeSelect';
 
 
 function MakingAppointment() {
@@ -147,7 +147,7 @@ function MakingAppointment() {
           </div>
         </div>
       )}
-    </div>
+      </div>
   );
 }
 
