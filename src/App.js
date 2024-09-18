@@ -10,10 +10,10 @@ function App() {
             <Route path="/sign-up" element={<Home/>}/>
             <Route path="/making-appointment" element={<MakingAppointment/>}/>
             <Route path="/dashboard" element={<DashboardLayout />}>
-              <Route path="/dashboard/admin" element={<DashboardAdmin/>} />
               <Route path="/dashboard/user" element={<DashbordUser/>} />
               <Route path="*" element={<NotFound />} />
             </Route>
+            <Route path="/dashboard/admin" element={<DashboardAdmin/>} />
         </Routes>
     </BrowserRouter>
   );
