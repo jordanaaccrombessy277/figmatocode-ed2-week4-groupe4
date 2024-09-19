@@ -19,11 +19,13 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/making-appointment" element={<MakingAppointment />} />
-        <Route path="/dashboard" element={<DashboardLayout />}>
-          <Route path="/dashboard/admin" element={<DashboardAdmin />} />
-          <Route index element={<DashbordUser />} />
-          <Route path="*" element={<NotFound />} />
+
+        <Route path="/dashboard/user" element={<DashboardLayout />}>
+          <Route index element={<DashbordUser/>} />
         </Route>
+
+        <Route path="/dashboard/admin" element={<DashboardAdmin/>} />
+        <Route path="*" element={<NotFound />} />        
       </Routes>
     </BrowserRouter>
   );

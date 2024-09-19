@@ -20,15 +20,10 @@ function DashboardLayout() {
           <Outlet />
         </main>
       </div>
-<<<<<<< HEAD
     </div>
   );
 }
 
-export default DashboardLayout;
-=======
-  );
-}
+export default DashboardLayout
 
-export default DashboardLayout;
->>>>>>> 8f6631fac55f4641edf8f9cb4a2dd25c65b3a94d
+
