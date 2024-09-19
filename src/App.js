@@ -9,14 +9,15 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/sign-up" element={<SignUp/>}/>
             <Route path="/making-appointment" element={<MakingAppointment/>}/>
-            <Route path="/dashboard" element={<DashboardLayout />}>
-              <Route path="/dashboard/admin" element={<DashboardAdmin/>} />
-              <Route path="/dashboard/user" index element={<DashbordUser/>} />
+            <Route path="/dashboard/user" element={<DashboardLayout />}>
+              <Route index element={<DashbordUser/>} />
               <Route path="*" element={<NotFound />} />
             </Route>
+            <Route path="/dashboard/admin" element={<DashboardAdmin/>} />
         </Routes>
     </BrowserRouter>
   );
+              
 }
 
 export default App;
