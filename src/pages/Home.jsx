@@ -1,9 +1,26 @@
 import React from 'react'
+import HeaderHome from '../components/HeaderHome'
+import Hero from '../components/Hero'
+import Partners from "../components/Partners"
+import Services from "../components/Services"
+import Quality from "../components/Quality"
+import Connexion from "../components/Connexion"
+import Reserve from "../components/Reserve"
+import Testimonials from "../components/Testimonials"
+import Footer from "../components/Footer"
 
 function Home() {
   return (
     <div>
-        Home
+        <HeaderHome />
+        <Hero />
+        <Partners />
+        <Services />
+        <Quality />
+        <Connexion />
+        <Reserve />
+        <Testimonials />
+        <Footer />
     </div>
   )
 }
