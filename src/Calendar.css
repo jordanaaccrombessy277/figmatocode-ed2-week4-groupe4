@@ -1,0 +1,37 @@
+/* Calendar.css */
+/* Styles pour le calendrier et la police Sora */
+
+body, .Sample, .Sample__container, .Sample__container__content {
+    font-family: 'Sora', sans-serif; /* Applique la police Sora globalement */
+  }
+  
+  .Sample {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+  
+  .Sample__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .Sample__container > * > * {
+    border: none;
+  }
+  
+  .Sample__container__content {
+    display: flex;
+    flex-basis: 420px;
+    flex-direction: column;
+    flex-grow: 100;
+    align-items: stretch;
+  }
+  
+  .Sample__container__content .react-calendar {
+    margin: 0 auto;
+  }
+  

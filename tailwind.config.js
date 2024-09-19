@@ -2,6 +2,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        'Sora' : ['Sora', 'sans-serif'],
+        'Sora-Bold' :['Sora-Bold', 'sans-serif']
+      },
       colors : {
         "gray-primary" : "#6C87AE",
         "blue-primary" : "#3A8EF6",
