@@ -41,7 +41,7 @@ function Sidebar({ isSidebarOpen }) {
           <h3 className="text-sm sm:text-base">John Doe</h3>
           <div className="text-xs sm:text-sm">johnjoe@gmail.com</div>
         </div>
-        <div className="w-10 h-10">
+        <div className="w-5 h-7 pt-1">
           <img src={chevreon_down_white} alt="chevreon_down_white" />
         </div>
       </div>

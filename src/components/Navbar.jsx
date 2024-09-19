@@ -36,13 +36,13 @@ function Navbar({ toggleSidebar, isSidebarOpen }) {
           <a href="/" className="text-gray hover:text-blue-primary">
             Logout
           </a>
-          <div className="sm:flex flex-row justify-between items-center gap-2 hidden">
+          <div className="sm:flex flex-row justify-center items-center gap-2 hidden">
             <img
               className="pointer-events-none w-5 h-5 rounded-full"
               src={avatar}
               alt="avatar-icon-svg"
             />
-            <div className="w-7 h-7">
+            <div className="w-5 h-7 pt-1">
               <img src={chevreon_down} alt="chevreon_down" />
             </div>
           </div>
