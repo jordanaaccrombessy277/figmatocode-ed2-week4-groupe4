@@ -20,7 +20,7 @@ function Header({ onSearch, toggleSidebar }) {
           </button>
           <div className="flex flex-col">
           <h1 className="text-xl font-bold text-gray-800 hidden lg:block">Dashboard admin</h1>
-          <div className="text-lg font-semibold mb-1">Welcome, Admin</div>
+          <div className="text-lg font-semibold mb-1 max-md:text-base max-sm:text-sm">Welcome, Admin</div>
           </div>
         </div>
         <div className="flex items-center space-x-4">
