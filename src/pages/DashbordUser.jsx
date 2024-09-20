@@ -61,7 +61,7 @@ function DashboardUser() {
           </button>
         </div>
 
-        {(selectedDate || selectedStatus) && (
+        {(selectedDate || selectedStatus ) && (
           <div>
             <button
               type="button"

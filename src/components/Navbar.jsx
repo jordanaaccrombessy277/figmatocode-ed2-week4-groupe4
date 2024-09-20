@@ -1,8 +1,8 @@
 import React from "react";
 import avatar from "../assets/avatar.svg";
-import logo from "../assets/logo.svg";
-import menu from "../assets/menu.svg";
-import close from "../assets/close.svg";
+import logo from "../assets/logo1.svg";
+import menu from "../assets/menu1.svg";
+import close from "../assets/close1.svg";
 import chevreon_down from "../assets/chevron-down-black.svg";
 
 function Navbar({ toggleSidebar, isSidebarOpen }) {

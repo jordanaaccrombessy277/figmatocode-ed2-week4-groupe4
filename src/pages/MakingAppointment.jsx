@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
-//import 'react-calendar/dist/Calendar.css';
-import '../Calendar.css';
+import 'react-calendar/dist/Calendar.css';
 import TimeSelect from '../components/TimeSelect';
 
 
@@ -67,22 +66,20 @@ function MakingAppointment() {
 
   return (
     <div className="flex justify-center items-center font-Sora min-h-screen bg-gray-100 p-4">
-      <div className="bg-white shadow-lg rounded-lg p-10 w-full max-w-4xl">
+      <div className="bg-white shadow-lg rounded-lg p-5 sm:p-10 w-full max-w-72 sm:max-w-4xl">
         <h1 className="text-3xl lg:text-4xl font-bold text-center mb-8">
           Book Your Appointment
         </h1>
 
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Section pour le calendrier */}
-          <div className="lg:w-1/2">
+          <div className="w-full lg:w-1/2">
             <p className="text-lg font-medium mb-4">Select Date:</p>
-            <div className="border border-gray-300 rounded-md p-4">
               <Calendar
                 onChange={handleDateChange}
                 value={date}
                 tileClassName={tileClassName}
               />
-            </div>
           </div>
 
           {/* Section pour les champs de saisie */}

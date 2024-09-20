@@ -30,6 +30,12 @@ function DashboardAdmin() {
     setSearchTerm(term);
   };
 
+  const handleResetFilters = () => {
+    setDateFilter('');
+    setStatusFilter('');
+    setSearchTerm('');
+  };
+
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
@@ -49,6 +55,7 @@ function DashboardAdmin() {
             />
             <select
               onChange={handleStatusFilter}
+              value={statusFilter}
               className="mr-2 mb-2 p-2 border rounded"
             >
               <option value="">Tous les statuts</option>
@@ -62,6 +69,15 @@ function DashboardAdmin() {
             >
               Today
             </button>
+
+            {(statusFilter || dateFilter ) && (
+            <button 
+              onClick={handleResetFilters}
+              className="mr-2 mb-2 bg-red-500 text-white font-bold py-2 px-4 rounded transition duration-150 ease-in-out"
+            >
+              Reset Filters
+            </button>
+            )}
           </div>
           <div className="flex-grow overflow-auto">
             <div className="inline-block min-w-full align-middle">

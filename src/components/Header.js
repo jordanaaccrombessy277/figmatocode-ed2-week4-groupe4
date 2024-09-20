@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import menu from "../assets/menu1.svg"
 
 function Header({ onSearch, toggleSidebar }) {
   const [showDoctorInfo, setShowDoctorInfo] = useState(false);
@@ -15,7 +16,7 @@ function Header({ onSearch, toggleSidebar }) {
             className="lg:hidden text-gray-600 p-2 rounded-md ms*"
             onClick={toggleSidebar}
           >
-            <img src="/assets/icons/menu.svg" alt="Menu" width={24} height={24} />
+            <img src={menu} alt="Menu" width={24} height={24} />
           </button>
           <div className="flex flex-col">
           <h1 className="text-xl font-bold text-gray-800 hidden lg:block">Dashboard admin</h1>
