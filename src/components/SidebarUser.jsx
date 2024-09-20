@@ -1,7 +1,7 @@
 import React from "react";
 import avatar from "../assets/avatar.svg";
 import chevreon_down_white from '../assets/chevron-down-white.svg';
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo1.svg";
 
 function Sidebar({ isSidebarOpen }) {
   return (

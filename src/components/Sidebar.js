@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-
+import logo from "../assets/logo1.svg"
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -29,7 +29,7 @@ function Sidebar() {
       `}>
         <div className="flex flex-col h-full">
           <div className="px-4 py-3 bg-white mb-6">
-            <img src="/assets/icons/logo.svg" alt="Logo de l'entreprise" className="w-full max-w-[150px] mx-auto" />
+            <img src={logo} alt="Logo de l'entreprise" className="w-full max-w-[150px] mx-auto" />
           </div>
           <nav className="mb-8">
             <ul className="space-y-2">
@@ -45,7 +45,7 @@ function Sidebar() {
               </li>
             </ul>
           </nav>
-          <div className="mt-auto p-4">
+          <div className="mt-auto p-4 overflow-hidden">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-2">
                 <div className="bg-white size-10 rounded-full">

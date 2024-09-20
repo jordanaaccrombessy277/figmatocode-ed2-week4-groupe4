@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Service({icon_service,title,whatsapp}) {
+function Service({icon_service,title,calendar}) {
   return (
      <div className="rounded-xl bg-white p-8">
          <img
@@ -15,7 +15,7 @@ function Service({icon_service,title,whatsapp}) {
             A shop where medicines are prepared and sold based on a doctor's prescription and medical goods are traded.
           </p>
           <a href="/making-appointment" className="md:px-7 px-4 md:py-4 py-2 items-center text-base md:text-lg rounded-3xl bg-gradient-to-r from-blue-primary to-purple-primary flex flex-row md:gap-16 gap-3">
-              <img src={whatsapp} alt="whatsapp" />
+              <img src={calendar} alt="calendar" />
               <span className="font-semibold text-white ">Reservation</span>
           </a>
      </div>

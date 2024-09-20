@@ -2,7 +2,7 @@ import React from 'react'
 import potion from "../assets/potion.svg"
 import heart from "../assets/heart.svg"
 import pick from "../assets/pick.svg"
-import whatsapp from "../assets/whatsapp.svg"
+import calendar from "../assets/calendar.svg"
 import Service from "./Service"
 
 
@@ -19,9 +19,9 @@ function Services() {
             </p>
         </div>
          <div className="pt-10 grid md:grid-cols-3 grid-cols-1 gap-9">
-             <Service icon_service={potion} title={`24 Hour Pharmacy`} whatsapp={whatsapp} />
-             <Service icon_service={heart} title={`Medical Check Up`} whatsapp={whatsapp} />
-             <Service icon_service={pick} title={`Professional Doctor`} whatsapp={whatsapp} />  
+             <Service icon_service={potion} title={`24 Hour Pharmacy`} calendar={calendar} />
+             <Service icon_service={heart} title={`Medical Check Up`} calendar={calendar} />
+             <Service icon_service={pick} title={`Professional Doctor`} calendar={calendar} />  
          </div>
     </div>
   )

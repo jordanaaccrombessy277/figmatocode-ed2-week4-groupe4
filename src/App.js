@@ -5,10 +5,13 @@ import {
   DashboardAdmin,
   DashbordUser,
   MakingAppointment,
-  SignUp,
+  SignUpAdmin,
+  SignInUser,
+  SignInAdmin,
+  SignUpUser,
 } from "./pages";
 import { DashboardLayout } from "./layouts";
-import SignIn from "./pages/SignIn";
+import Role from "./pages/Role";
 
 
 function App() {
@@ -16,8 +19,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/signin" element={<SignIn />} />
+        <Route path="/role" element={<Role />} />
+        <Route path="/signup/doctors" element={<SignUpAdmin />} />
+        <Route path="/signup/patients" element={<SignUpUser />} />
+        <Route path="/signin/doctors" element={<SignInAdmin />} />
+        <Route path="/signin/patients" element={<SignInUser />} />
         <Route path="/making-appointment" element={<MakingAppointment />} />
 
         <Route path="/dashboard/user" element={<DashboardLayout />}>

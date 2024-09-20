@@ -1,6 +1,6 @@
 import React from 'react'
 import img_relationship from "../assets/img_relationship.svg"
-import whatsapp from "../assets/whatsapp.svg"
+import calendar from "../assets/calendar.svg"
 
 function Connexion() {
   return (
@@ -11,8 +11,8 @@ function Connexion() {
               A hospital is an integral part of a social and health organization with the function of providing comprehensive services.
             </p>
             <div className="flex">
-                 <a href="/" className="md:px-7 px-4 md:py-4 py-2 items-center text-sm md:text-lg rounded-3xl bg-gradient-to-r from-blue-primary to-purple-primary flex flex-row md:gap-5 gap-3">
-                    <img src={whatsapp} alt="whatsapp" />
+                 <a href="/making-appointment" className="md:px-7 px-4 md:py-4 py-2 items-center text-sm md:text-lg rounded-3xl bg-gradient-to-r from-blue-primary to-purple-primary flex flex-row md:gap-5 gap-3">
+                    <img src={calendar} alt="calendar" />
                     <span className="font-semibold text-white ">Reservation</span>
                  </a>
             </div>

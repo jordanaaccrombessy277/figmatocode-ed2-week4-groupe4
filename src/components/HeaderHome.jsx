@@ -22,16 +22,17 @@ function HeaderHome() {
         
         <ul className="lg:flex lg:flex-row gap-5 hidden">
           <li><a href="/" className="text-base text-blue-primary">Home</a></li>
-          <li><a href="/" className="text-base text-gray-primary">About Us</a></li>
-          <li><a href="/" className="text-base text-gray-primary">Services</a></li>
-          <li><a href="/" className="text-base text-gray-primary">Contact Us</a></li>
+          <li><a href="#services" className="text-base text-gray-primary">Services</a></li>
+          <li><a href="#about" className="text-base text-gray-primary">About Us</a></li>
+          <li><a href="#testimonials" className="text-base text-gray-primary">Testimonials</a></li>
+          <li><a href="#contact" className="text-base text-gray-primary">Contact Us</a></li>
         </ul>
 
         {isOpenHeader && <HeaderHomeMobile handleClickHamburger={handleClickHamburger} />}
       </div>
-      <a href="/signup" className="md:px-7 px-4 md:py-4 py-2 items-center text-[8px] md:text-sm rounded-3xl bg-gradient-to-r from-blue-primary to-purple-primary flex flex-row md:gap-2.5 gap-1">
+      <a href="/role" className="md:px-7 px-4 md:py-4 py-2 items-center text-[8px] md:text-sm rounded-3xl bg-gradient-to-r from-blue-primary to-purple-primary flex flex-row md:gap-2.5 gap-1">
           <img src={pasient} alt="Register Pasien" />
-          <span className="font-semibold text-white">Patient Register</span>
+          <span className="font-semibold text-white">Register</span>
       </a>
       <img src={menu} className="lg:hidden cursor-pointer" onClick={handleClickHamburger} alt="menu" />
     </header>

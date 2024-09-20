@@ -14,10 +14,10 @@ function Partners() {
          </p>
          <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-12 place-items-center items-center">
             <img className="w-[126px] h-[91px] lg:w-full lg:h-auto" src={logo_karmen} alt="doctor"/>
-            <img className="w-full w-[120px] h-[91px] lg:w-full lg:h-auto" src={logo_ciputra} alt="doctor"/>
-            <img className="w-full w-[94px] h-[78px] lg:w-full lg:h-auto" src={logo_jude} alt="doctor"/>
-            <img className="w-full w-[182px] h-[54px] lg:w-full lg:h-auto" src={logo_mayapada} alt="doctor"/>
-            <img className="w-full w-[256px] h-[64px] lg:w-full lg:h-auto" src={logo_siloam} alt="doctor"/>
+            <img className="w-[120px] h-[91px] lg:w-full lg:h-auto" src={logo_ciputra} alt="doctor"/>
+            <img className="w-[94px] h-[78px] lg:w-full lg:h-auto" src={logo_jude} alt="doctor"/>
+            <img className="w-[182px] h-[54px] lg:w-full lg:h-auto" src={logo_mayapada} alt="doctor"/>
+            <img className="w-[256px] h-[64px] lg:w-full lg:h-auto" src={logo_siloam} alt="doctor"/>
          </div>
     </div>
   )

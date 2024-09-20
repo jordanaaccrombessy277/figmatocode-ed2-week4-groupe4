@@ -11,7 +11,7 @@ import Footer from "../components/Footer"
 
 function Home() {
   return (
-    <div>
+    <div className='container'>
         <HeaderHome />
         <Hero />
         <Partners />

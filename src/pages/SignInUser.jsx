@@ -1,11 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import BaseInput from "../components/common/BaseInput";
 import BaseAuthButton from "../components/common/BaseAuthButton";
 import GoogleButton from "../components/common/GoogleButton";
 import Logo from "../components/common/Logo";
 
-function SignIn() {
+function SignInUser() {
+
+  const navigate = useNavigate();
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    navigate('/dashboard/user');
+  };
+
   return (
     <div className="w-full min-h-screen bg-white-primary py-16">
       <div className="mx-auto max-w-xl mb-5">
@@ -23,7 +33,7 @@ function SignIn() {
       </div>
       <div className="max-w-xl w-full mx-auto">
         <div className="bg-white px-6 py-12 shadow sm:rounded-3xl sm:px-12">
-          <form action="#" method="POST" className="space-y-6">
+          <form onSubmit={handleSubmit} action="#" method="POST" className="space-y-6">
             <BaseInput name="email" label="Email address" type="email" />
             <BaseInput name="password" label="Password" type="password" />
 
@@ -94,4 +104,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default SignInUser;
