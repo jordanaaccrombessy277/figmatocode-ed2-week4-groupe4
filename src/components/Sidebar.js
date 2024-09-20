@@ -45,7 +45,7 @@ function Sidebar() {
               </li>
             </ul>
           </nav>
-          <div className="mt-auto p-4">
+          <div className="mt-auto p-4 overflow-hidden">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-2">
                 <div className="bg-white size-10 rounded-full">

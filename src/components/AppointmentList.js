@@ -36,7 +36,7 @@ function AppointmentList({ onPatientClick, dateFilter, statusFilter, searchTerm 
           </thead>
           <tbody className="text-gray-600 text-sm font-light">
             {filteredAppointments.map((appointment) => (
-              <tr key={appointment.id} className="border-b border-gray-200 hover:bg-gray-100"  onClick={() => onPatientClick(appointment)}>
+              <tr key={appointment.id} className="border-b cursor-pointer border-gray-200 hover:bg-gray-100"  onClick={() => onPatientClick(appointment)}>
                 <td className="py-3 px-6 text-left whitespace-nowrap">
                   <div className="flex items-center">
                     <div className="mr-2">👤</div>

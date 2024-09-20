@@ -128,7 +128,7 @@ const UserAppointmentTable = ({ selectedDate, selectedStatus }) => {
         </thead>
         <tbody>
           {filteredData.map((item) => (
-            <tr key={item.id} className="border-b border-gray-200 hover:bg-gray-50">
+            <tr key={item.id} className="border-b cursor-pointer border-gray-200 hover:bg-gray-50">
               <td className="py-3 px-4 text-sm sm:text-base">#{item.id}</td>
               <td className="py-3 px-4 flex items-center">
                 <img
