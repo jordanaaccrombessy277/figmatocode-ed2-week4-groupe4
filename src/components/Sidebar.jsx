@@ -28,7 +28,7 @@ function Sidebar() {
         ${isOpen ? 'translate-x-0 w-11/12 max-w-sm' : '-translate-x-full lg:translate-x-0'}
       `}>
         <div className="flex flex-col h-full">
-          <div className="px-4 py-3 bg-white mb-6">
+          <div className="px-4 py-4 bg-white mb-6">
             <img src={logo} alt="Logo de l'entreprise" className="w-full max-w-[150px] mx-auto" />
           </div>
           <nav className="mb-8">
